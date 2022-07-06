@@ -141,6 +141,7 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 3fr 3fr 2fr;
+    padding: 20px; 
 }
 
 .projects-container {
@@ -151,7 +152,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 4fr 4fr 4fr 1fr;
 
-    margin: 20px;
+    /* margin: 20px; */
     border: 1px white solid;
 }
 
@@ -172,7 +173,6 @@
 
 .card {
     display: grid;
-    /* margin: 20px; */
     border-radius: 10px;
     border-left: 10px solid hotpink;
     padding: 25px 20px;
@@ -205,11 +205,35 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
     border: 1px white solid;
+    margin-left: 20px;
 }
 
 .announcements {
     grid-row: 1/2;
+
+    display: grid;
+    grid-template-rows: 1fr 6fr;
     border: 1px white solid;
+}
+
+.announcements h2 {
+    align-self: center;
+}
+
+.announcement-card {
+    grid-row: 2/3;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.announcement:not(:first-child) {
+    padding-top: 20px;
+}
+
+.announcement:not(:last-child) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
 }
 
 .trending {
