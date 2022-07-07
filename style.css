@@ -44,25 +44,27 @@
 .header {
     grid-column: 2/3;
     grid-row: 1/2;
-    background-color: lemonchiffon;
+    background-color: white;
 
     display: grid;
     grid-template: 1fr 2fr / 2fr 1fr;
-    /* align-items: center; */
+    margin-left: 5%;
 }
 
 .search-area {
     grid-column: 1/2;
 
     display: grid;
-    grid-template-columns: 1fr 9fr;
+    grid-template-columns: 5% 95%;
     align-items: center;
     justify-items: start;
     border: 1px black solid;
 }
 
 .magnify-icon {
+    /* justify-self: center; */
     width: 35px;
+    border: 1px black solid;
 }
 
 .search-input {
@@ -106,6 +108,14 @@
     grid-template-columns: 1fr 9fr;
     align-items: center;
     border: 1px black solid;
+}
+
+.greeting-message {
+    font-weight: bold;
+}
+
+.greeting-message .user-handle {
+    font-size: 26px;
 }
 
 .big-avatar {
@@ -212,7 +222,7 @@
     grid-row: 1/2;
 
     display: grid;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 14% 86%;
     border: 1px white solid;
 }
 
@@ -224,22 +234,55 @@
     grid-row: 2/3;
     background-color: white;
     border-radius: 10px;
-    padding: 40px;
+    padding: 30px 30px 60px 30px;
 }
 
 .announcement:not(:first-child) {
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 .announcement:not(:last-child) {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     border-bottom: 1px solid lightgray;
 }
 
 .trending {
     grid-row: 2/3;
     border: 1px white solid;
+
+    display: grid;
+    grid-template-rows: 10% 80%;  
 }
+
+.trending h2 {
+    align-self: center;
+    margin-top: 5px;
+}
+
+.trending-card {
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 25%);
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px 0;
+}
+
+.user-trend {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+}
+
+.user-trend img {
+    width: 50px;
+    /* border: 1px black solid; */
+}
+
+
 
 
 
