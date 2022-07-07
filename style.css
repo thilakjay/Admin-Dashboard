@@ -47,8 +47,9 @@
     background-color: white;
 
     display: grid;
-    grid-template: 1fr 2fr / 2fr 1fr;
+    grid-template: 1fr 2fr / 60% 40%;
     margin-left: 5%;
+    margin-top: 10px;
 }
 
 .search-area {
@@ -58,13 +59,13 @@
     grid-template-columns: 5% 95%;
     align-items: center;
     justify-items: start;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
 .magnify-icon {
     /* justify-self: center; */
     width: 35px;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
 .search-input {
@@ -81,8 +82,8 @@
     align-items: center;
     /* justify-content: center; */
     justify-items: center;
-    margin: 0 15%;
-    border: 1px black solid;
+    margin: 0 20%;
+    /* border: 1px black solid; */
 }
 
 .bell-icon {
@@ -97,7 +98,7 @@
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
 .greeting-area {
@@ -107,7 +108,7 @@
     display: grid;
     grid-template-columns: 1fr 9fr;
     align-items: center;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
 .greeting-message {
@@ -130,7 +131,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
-    border: 1px black solid;
+    margin: 0 10%;
+    /* border: 1px black solid; */
 }
 
 .menu-buttons-area button {
@@ -163,7 +165,7 @@
     grid-template-rows: 1fr 4fr 4fr 4fr 1fr;
 
     /* margin: 20px; */
-    border: 1px white solid;
+    /* border: 1px white solid; */
 }
 
 .projects-container h2 {
@@ -178,7 +180,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
-    border: 1px white solid;
+    /* border: 1px white solid; */
 }
 
 .card {
@@ -214,7 +216,7 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-    border: 1px white solid;
+    /* border: 1px white solid; */
     margin-left: 20px;
 }
 
@@ -223,7 +225,7 @@
 
     display: grid;
     grid-template-rows: 14% 86%;
-    border: 1px white solid;
+    /* border: 1px white solid; */
 }
 
 .announcements h2 {
@@ -248,10 +250,10 @@
 
 .trending {
     grid-row: 2/3;
-    border: 1px white solid;
+    /* border: 1px white solid; */
 
     display: grid;
-    grid-template-rows: 10% 80%;  
+    grid-template-rows: 10% 78%;  
 }
 
 .trending h2 {
