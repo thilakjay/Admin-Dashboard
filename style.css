@@ -17,7 +17,7 @@
     background-color: hotpink;
 
     display: grid;
-    grid-template-rows: 2fr repeat(9, 1fr);
+    grid-template-rows: 10% repeat(9, 7%);
     color: white;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .dashboard-label img {
-    width: 70px;
+    width: 65px;
 }
 
 .header {
@@ -48,8 +48,10 @@
 
     display: grid;
     grid-template: 1fr 2fr / 60% 40%;
-    margin-left: 5%;
-    margin-top: 10px;
+    padding-left: 5%;
+    margin-top: 25px;
+    box-shadow: 0 8px 10px -10px gray;
+    z-index: 1;
 }
 
 .search-area {
@@ -59,31 +61,27 @@
     grid-template-columns: 5% 95%;
     align-items: center;
     justify-items: start;
-    /* border: 1px black solid; */
+    gap: 10px;
 }
 
 .magnify-icon {
-    /* justify-self: center; */
-    width: 35px;
-    /* border: 1px black solid; */
+    width: 32px;   
 }
 
 .search-input {
-    width: 80%;
-    border-radius: 15px;
-    height: 2rem;
+    width: 90%;
+    border-radius: 18px;
+    height: 2.5rem;
     border: none;
-    background-color: lightgray;
+    background-color: rgb(235, 231, 231);
 }
 
 .profile-area {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    /* justify-content: center; */
     justify-items: center;
     margin: 0 20%;
-    /* border: 1px black solid; */
 }
 
 .bell-icon {
@@ -98,7 +96,6 @@
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    /* border: 1px black solid; */
 }
 
 .greeting-area {
@@ -108,7 +105,6 @@
     display: grid;
     grid-template-columns: 1fr 9fr;
     align-items: center;
-    /* border: 1px black solid; */
 }
 
 .greeting-message {
@@ -132,13 +128,13 @@
     align-items: center;
     justify-items: center;
     margin: 0 10%;
-    /* border: 1px black solid; */
 }
 
 .menu-buttons-area button {
-    width: 120px;
-    height: 50px;
+    width: 125px;
+    height: 55px;
     border: none;
+    font-size: 18px;
     font-weight: bold;
     color: white;
     background-color: hotpink;
@@ -163,9 +159,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 4fr 4fr 4fr 1fr;
-
-    /* margin: 20px; */
-    /* border: 1px white solid; */
 }
 
 .projects-container h2 {
@@ -180,7 +173,6 @@
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
-    /* border: 1px white solid; */
 }
 
 .card {
@@ -191,6 +183,7 @@
     background-color: white;
     grid-template-rows: 10% 50% 40%;
     gap: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card p {
@@ -216,7 +209,6 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-    /* border: 1px white solid; */
     margin-left: 20px;
 }
 
@@ -225,7 +217,6 @@
 
     display: grid;
     grid-template-rows: 14% 86%;
-    /* border: 1px white solid; */
 }
 
 .announcements h2 {
@@ -237,6 +228,8 @@
     background-color: white;
     border-radius: 10px;
     padding: 30px 30px 60px 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: rgba(0, 0, 0, 0.788);
 }
 
 .announcement:not(:first-child) {
@@ -250,7 +243,6 @@
 
 .trending {
     grid-row: 2/3;
-    /* border: 1px white solid; */
 
     display: grid;
     grid-template-rows: 10% 78%;  
@@ -271,6 +263,7 @@
     border-radius: 10px;
     padding: 30px;
     margin: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .user-trend {
@@ -281,7 +274,6 @@
 
 .user-trend img {
     width: 50px;
-    /* border: 1px black solid; */
 }
 
 
